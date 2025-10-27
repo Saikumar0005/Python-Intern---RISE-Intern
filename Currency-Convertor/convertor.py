@@ -2,9 +2,14 @@ import tkinter as tk
 from tkinter import ttk
 
 exchange_rates = {
-    'USD': {'INR': 83.2, 'EUR': 0.92},
-    'INR': {'USD': 0.012, 'EUR': 0.011},
-    'EUR': {'USD': 1.09, 'INR': 90.5}
+    'USD': {'INR': 83.2, 'EUR': 0.92, 'GBP': 0.78, 'JPY': 150.3, 'AUD': 1.54, 'CAD': 1.37, 'CNY': 7.11},
+    'INR': {'USD': 0.012, 'EUR': 0.011, 'GBP': 0.0094, 'JPY': 1.81, 'AUD': 0.018, 'CAD': 0.016, 'CNY': 0.085},
+    'EUR': {'USD': 1.09, 'INR': 90.5, 'GBP': 0.85, 'JPY': 163.7, 'AUD': 1.67, 'CAD': 1.49, 'CNY': 7.77},
+    'GBP': {'USD': 1.28, 'INR': 106.6, 'EUR': 1.17, 'JPY': 192.5, 'AUD': 1.96, 'CAD': 1.75, 'CNY': 9.1},
+    'JPY': {'USD': 0.0067, 'INR': 0.55, 'EUR': 0.0061, 'GBP': 0.0052, 'AUD': 0.010, 'CAD': 0.0091, 'CNY': 0.047},
+    'AUD': {'USD': 0.65, 'INR': 55.3, 'EUR': 0.60, 'GBP': 0.51, 'JPY': 100.2, 'CAD': 0.89, 'CNY': 4.6},
+    'CAD': {'USD': 0.73, 'INR': 61.8, 'EUR': 0.67, 'GBP': 0.57, 'JPY': 111.9, 'AUD': 1.12, 'CNY': 5.18},
+    'CNY': {'USD': 0.14, 'INR': 11.7, 'EUR': 0.13, 'GBP': 0.11, 'JPY': 21.1, 'AUD': 0.22, 'CAD': 0.19}
 }
 
 def convert_currency(amount, source, target):
@@ -83,3 +88,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
